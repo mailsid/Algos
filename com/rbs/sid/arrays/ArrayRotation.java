@@ -15,12 +15,16 @@ public class ArrayRotation {
 
         int j = 0;
 
-        for(int i = rotateBy -1 ; i < input.length; i ++){
+        for(int i = rotateBy ; i < input.length; i ++){
 
             int temp = input[j];
             input[j] = input[i];
             input[i] = temp;
             j ++;
+        }
+
+        for(int a : input){
+            System.out.print(a);
         }
 
     }
