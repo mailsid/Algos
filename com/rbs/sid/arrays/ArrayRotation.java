@@ -13,6 +13,15 @@ public class ArrayRotation {
 
     private static void rotate(int[] input, int rotateBy) {
 
+        int j = 0;
+
+        for(int i = rotateBy -1 ; i < input.length; i ++){
+
+            int temp = input[j];
+            input[j] = input[i];
+            input[i] = temp;
+            j ++;
+        }
 
     }
 }
